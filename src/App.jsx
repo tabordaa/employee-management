@@ -4,6 +4,7 @@ import { Layout } from "./components/Layout/Layout";
 import { ProtectedRoute } from "./components/Layout/ProtectedRoute";
 import { Login } from "./pages/Login/Login";
 import { AuthProvider } from "./context/AuthContext";
+import { Dashboard } from "./pages/Dashboard/Dashboard";
 import './App.css';
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
         <Route path="/" element={
           <ProtectedRoute>
             <Layout>
-              <h1>Dashboard Page (Soon) </h1>
+              <Dashboard/>
             </Layout>
           </ProtectedRoute>
           }

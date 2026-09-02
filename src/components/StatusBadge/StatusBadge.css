@@ -1,0 +1,18 @@
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px; /* Forma de píldora redonda */
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+}
+
+.status-badge.active {
+  background-color: var(--status-active-bg);
+  color: var(--status-active-text);
+}
+
+.status-badge.inactive {
+  background-color: var(--status-inactive-bg);
+  color: var(--status-inactive-text);
+}

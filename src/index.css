@@ -1,25 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Color Palette (Dark Mode) */
-  --bg-primary: #0f172a;
-  --bg-secondary: #1e293b;
-  --bg-tertiary: #334155;
+  /* Color Palette (Light Mode - Enterprise) */
+  --bg-primary: #f8fafc; /* Fondo principal gris muy claro */
+  --bg-secondary: #ffffff; /* Fondo de tarjetas blanco */
+  --bg-tertiary: #f1f5f9; /* Hover states */
   
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
+  --text-primary: #0f172a; /* Texto principal oscuro */
+  --text-secondary: #475569; /* Texto secundario gris */
+  --text-muted: #94a3b8;
   
-  --accent-primary: #06b6d4; /* Teal */
-  --accent-hover: #0891b2;
+  --accent-primary: #2563eb; /* Azul corporativo */
+  --accent-hover: #1d4ed8;
   
-  --status-active-bg: rgba(16, 185, 129, 0.15);
-  --status-active-text: #34d399;
+  /* Badges de estado */
+  --status-active-bg: #dcfce7;
+  --status-active-text: #166534;
   
-  --status-inactive-bg: rgba(239, 68, 68, 0.15);
-  --status-inactive-text: #f87171;
+  --status-inactive-bg: #fee2e2;
+  --status-inactive-text: #991b1b;
   
-  --border-color: #334155;
+  --border-color: #e2e8f0;
   --error-color: #ef4444;
 
   /* Typography */
@@ -68,11 +69,10 @@ button {
   background: none;
 }
 
-/* Glassmorphism utility classes */
+/* Glassmorphism/Card utility classes para modo claro */
 .glass-panel {
-  background: rgba(30, 41, 59, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Layout.css';
 
 export const Sidebar = () => {
@@ -6,16 +7,22 @@ export const Sidebar = () => {
         <aside className="sidebar">
             <div className="sidebar-brand">
                 <span className="brand-icon">🏢</span>
-                <h2>Enterprise</h2>
+                <h2>BUK</h2>
             </div>
 
             <nav className="sidebar-nav">
-                <a href="/" className="nav-item">
+                <Link
+                    to="/"
+                    className={`nav-item ${location.pathname === '/' ? 'active' : ''}`}
+                >
                     Dashboard
-                </a>
-                <a href="" className="nav-item active">
-                    Employee List
-                </a>
+                </Link>
+                <Link
+                    to="/employees"
+                    className={`nav-item ${location.pathname === '/employees' ? 'active' : ''}`}
+                >
+                    Employee list
+                </Link>
             </nav>
         </aside>
     );

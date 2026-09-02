@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Layout } from "./components/Layout/Layout";
 import { ProtectedRoute } from "./components/Layout/ProtectedRoute";
-import { Login } from "./pages/Login";
+import { Login } from "./pages/Login/Login";
 import { AuthProvider } from "./context/AuthContext";
 import './App.css';
 

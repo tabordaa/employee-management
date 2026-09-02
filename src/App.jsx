@@ -1,17 +1,35 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Layout } from "./components/Layout/Layout";
+import { ProtectedRoute } from "./components/Layout/ProtectedRoute";
+import { Login } from "./pages/Login";
+import { AuthProvider } from "./context/AuthContext";
 import './App.css';
 
 function App() {
   return (
-    <Layout>
+    <AuthProvider>
       <Routes>
-        <Route path="/" element={<h1>Dashboard Page (Soon) </h1>}></Route>
-        <Route path="/employees" element={<h1>Employee Page (Soon) </h1>}></Route>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/" element={
+          <ProtectedRoute>
+            <Layout>
+              <h1>Dashboard Page (Soon) </h1>
+            </Layout>
+          </ProtectedRoute>
+          }
+        />
+        <Route path="/employees" element={
+          <ProtectedRoute>
+            <Layout>
+              <h1>Employee Page (Soon) </h1>
+            </Layout>
+          </ProtectedRoute>
+          }
+        />
         <Route path="*" element={<h1>404 - Not foun</h1>}></Route>
       </Routes>
-    </Layout>
+    </AuthProvider>
   )
 }
 

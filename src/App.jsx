@@ -28,7 +28,7 @@ function App() {
           </ProtectedRoute>
           }
         />
-        <Route path="*" element={<h1>404 - Not foun</h1>}></Route>
+        <Route path="*" element={<h1>404 - Not found</h1>}></Route>
       </Routes>
     </AuthProvider>
   )

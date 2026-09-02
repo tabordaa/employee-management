@@ -24,7 +24,7 @@ export const Login = () => {
     return (
         <div className="login-container">
             <div className="login-image">
-                <h1>Kinetic</h1>
+                <h1>BUK</h1>
                 <p>Secure BUK access</p>
             </div>
             <div className="login-form-container">

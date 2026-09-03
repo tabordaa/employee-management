@@ -28,8 +28,8 @@ export const EmployeeProvider = ({children}) => {
         return newEmployee
     };
 
-    const changeStatus = async (id, newStatus) => {
-        await employeeService.updateStatus(id, newStatus);
+    const changeStatus = async (id, newStatus, endDate = null) => {
+        await employeeService.updateStatus(id, newStatus, endDate);
         // Se refresca la lista
         const data = await employeeService.getAll();
         setEmployees(data);

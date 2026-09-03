@@ -51,12 +51,12 @@ export const employeeService = {
     },
 
     // Actualizar estado (Finalizar contrato)
-    updateStatus: async (id, newStatus) => {
+    updateStatus: async (id, newStatus, endDate = null) => {
         return new Promise((resolve) => {
         const employees = getStoredEmployees();
         const updatedEmployees = employees.map(emp => {
             if (emp.id === id) {
-            return { ...emp, status: newStatus, endDate: new Date().toISOString() };
+            return { ...emp, status: newStatus, endDate: endDate || new Date().toISOString() };
             }
             return emp;
         });

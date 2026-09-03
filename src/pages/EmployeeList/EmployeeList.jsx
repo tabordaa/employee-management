@@ -50,18 +50,12 @@ export const EmployeeList = () => {
                                             <StatusBadge status={emp.status}></StatusBadge>
                                         </td>
                                         <td>
-                                            {emp.status === 'ACTIVE' && (
-                                                <button
-                                                    onClick={() => {
-                                                        if(window.confirm('¿Seguro que desea finalizar el contrato de este empleado?')){
-                                                            changeStatus(emp.id,'INACTIVE');
-                                                        }
-                                                    }}
-                                                    style={{color: 'red', fontWeight: 'bold', fontSize: '0.8rem', padding: '0.5rem', background:'#fee2e2',borderRadius:'4px'}}
-                                                >
-                                                    Finalizar contrato
-                                                </button>
-                                            )}
+                                            <Link 
+                                                to={`/employees/${emp.id}`}
+                                                style={{color: 'var(--accent-primary)', fontWeight: 'bold', fontSize: '0.8rem', padding: '0.5rem', border: '1px solid var(--accent-primary)', borderRadius:'4px', textDecoration: 'none'}}
+                                            >
+                                                Ver Detalle
+                                            </Link>
                                         </td>
                                     </tr>
                                 ))}

@@ -7,6 +7,7 @@ import { AuthProvider } from "./context/AuthContext";
 import { Dashboard } from "./pages/Dashboard/Dashboard";
 import { EmployeeList } from "./pages/EmployeeList/EmployeeList";
 import { RegisterEmployee } from "./pages/RegisterEmployee/RegisterEmployee";
+import { EmployeeDetail } from "./pages/EmployeeDetail/EmployeeDetail";
 import './App.css';
 
 function App() {
@@ -34,6 +35,14 @@ function App() {
           <ProtectedRoute>
             <Layout>
               <RegisterEmployee/>
+            </Layout>
+          </ProtectedRoute>
+          }
+        />
+        <Route path="/employees/:id" element={
+          <ProtectedRoute>
+            <Layout>
+              <EmployeeDetail/>
             </Layout>
           </ProtectedRoute>
           }

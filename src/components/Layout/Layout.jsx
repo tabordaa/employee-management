@@ -11,9 +11,6 @@ export const Layout = ({children}) => {
             <Sidebar/>
             <main className="main-content">
                 <div className="topbar">
-                    <div className="search-bar">
-                        <input type="text" placeholder="Buscar registros..." />
-                    </div>
                     <div className="user-profile" style={{display: 'flex', gap: '1rem', alignItems: 'Center'}}>
                         <span style={{fontWeight: '500'}}>Hola, {user?.name}!</span>
                         <button

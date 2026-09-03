@@ -41,7 +41,7 @@ export const EmployeeList = () => {
                             <tbody>
                                 {employees.map((emp) => (
                                     <tr key={emp.id}>
-                                        <td className="font-medium">{emp.fulName}</td>
+                                        <td className="font-medium">{emp.fullName}</td>
                                         <td>{emp.documentNumber}</td>
                                         <td>{emp.position}</td>
                                         <td>{emp.department}</td>

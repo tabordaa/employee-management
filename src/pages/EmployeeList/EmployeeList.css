@@ -1,0 +1,77 @@
+.employee-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-header h2 {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+.list-header p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.primary-btn {
+  background-color: var(--accent-primary);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.primary-btn:hover {
+  background-color: var(--accent-hover);
+}
+
+.table-container {
+  overflow-x: auto;
+  background: white; /* Limpio para enterprise */
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.employee-table th {
+  background-color: var(--bg-primary);
+  padding: var(--spacing-md);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.employee-table td {
+  padding: var(--spacing-md);
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.employee-table tr:hover td {
+  background-color: var(--bg-primary); /* Efecto hover en la fila */
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.empty-state {
+  padding: 3rem;
+  text-align: center;
+  color: var(--text-secondary);
+}

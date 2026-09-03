@@ -5,6 +5,7 @@ import { ProtectedRoute } from "./components/Layout/ProtectedRoute";
 import { Login } from "./pages/Login/Login";
 import { AuthProvider } from "./context/AuthContext";
 import { Dashboard } from "./pages/Dashboard/Dashboard";
+import { EmployeeList } from "./pages/EmployeeList/EmployeeList";
 import './App.css';
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
         <Route path="/employees" element={
           <ProtectedRoute>
             <Layout>
-              <h1>Employee Page (Soon) </h1>
+              <EmployeeList/>
             </Layout>
           </ProtectedRoute>
           }

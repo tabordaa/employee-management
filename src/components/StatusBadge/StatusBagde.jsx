@@ -1,5 +1,5 @@
 import React from "react";
-import './StatusBagde.css';
+import './StatusBadge.css';
 
 // Recibe un status que puede ser ACTIVE o INACTIVE
 export const StatusBadge = ({status}) => {

@@ -26,7 +26,7 @@ export const Layout = ({children}) => {
                                 fontWeight: '600'
                             }}
                         >
-                            Salir
+                            Cerrar sesión
                         </button>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ export const StatusBadge = ({status}) => {
     const isActive = status === 'ACTIVE';
 
     return (
-        <span className={`status-badge ${isActive} ? 'active' : 'inactive'`}>
+        <span className={`status-badge ${isActive ? 'active' : 'inactive'}`}>
             {isActive ? 'Active' : 'Inactive'}
         </span>
     )

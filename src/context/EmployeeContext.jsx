@@ -28,12 +28,20 @@ export const EmployeeProvider = ({children}) => {
         return newEmployee
     };
 
+    const changeStatus = async (id, newStatus) => {
+        await employeeService.updateStatus(id, newStatus);
+        // Se refresca la lista
+        const data = await employeeService.getAll();
+        setEmployees(data);
+    };
+
 
     // Se exportan los datos y funciones para que otros componentes los usen
     const value = {
         employees,
         loading,
-        addEmployee
+        addEmployee,
+        changeStatus
     };
 
     return (

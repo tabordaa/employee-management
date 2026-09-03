@@ -1,0 +1,95 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  max-width: 900px; /* Para que el form no se estire infinito en pantallas grandes */
+}
+
+.register-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.register-header h2 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+.cancel-btn {
+  padding: 0.5rem 1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: white;
+}
+
+.form-card {
+  background: white;
+  padding: var(--spacing-xl);
+}
+
+.employee-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-section h3 {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.form-group input, 
+.form-group select {
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.form-group input:focus, 
+.form-group select:focus {
+  border-color: var(--accent-primary);
+}
+
+.input-error {
+  border-color: var(--error-color) !important;
+  background-color: var(--status-inactive-bg);
+}
+
+.error-text {
+  color: var(--error-color);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}

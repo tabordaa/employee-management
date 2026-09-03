@@ -6,6 +6,7 @@ import { Login } from "./pages/Login/Login";
 import { AuthProvider } from "./context/AuthContext";
 import { Dashboard } from "./pages/Dashboard/Dashboard";
 import { EmployeeList } from "./pages/EmployeeList/EmployeeList";
+import { RegisterEmployee } from "./pages/RegisterEmployee/RegisterEmployee";
 import './App.css';
 
 function App() {
@@ -25,6 +26,14 @@ function App() {
           <ProtectedRoute>
             <Layout>
               <EmployeeList/>
+            </Layout>
+          </ProtectedRoute>
+          }
+        />
+        <Route path="/employees/new" element={
+          <ProtectedRoute>
+            <Layout>
+              <RegisterEmployee/>
             </Layout>
           </ProtectedRoute>
           }

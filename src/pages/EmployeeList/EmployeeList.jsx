@@ -5,7 +5,7 @@ import { StatusBadge } from "../../components/StatusBadge/StatusBagde";
 import './EmployeeList.css'
 
 export const EmployeeList = () => {
-    const {employees, loading} = useEmployees();
+    const {employees, loading, changeStatus} = useEmployees();
 
     if(loading) return <div>Cargando directorio...</div>
 

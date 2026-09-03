@@ -5,7 +5,7 @@
 
 Una moderna aplicación web (Single Page Application) desarrollada en React para centralizar y agilizar la gestión administrativa de los recursos humanos en una organización.
 
-> **Enlace de Despliegue:** [https://employee-management.vercel.app](https://employee-management.vercel.app) *(Nota: Actualizar con la URL real generada por Vercel)*
+> **Enlace de Despliegue:** [https://employee-management.vercel.app](https://employee-management.vercel.app)
 
 ---
 
